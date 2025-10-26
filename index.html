@@ -1,27 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skydaddy – Chat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skydaddy — The Cosmic Helper</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div class="chat-container">
-        <h1 class="title">🌌 Skydaddy</h1>
-        <p class="subtitle">The Cosmic Helper</p>
-
-        <div id="chat-box" class="chat-box">
-            <!-- Messages will appear here -->
+  <div class="page">
+    <main class="card" role="main" aria-label="Skydaddy chat">
+      <div class="header">
+        <div class="logo">🌈</div>
+        <div class="title-wrap">
+          <h1 class="title">Skydaddy</h1>
+          <p class="subtitle">The Cosmic Helper — gentle & pastel</p>
         </div>
+      </div>
 
-        <div class="input-area">
-            <input type="text" id="userInput" placeholder="Speak to Skydaddy..." />
-            <button id="sendBtn">➤</button>
-        </div>
-    </div>
+      <section id="chatBox" class="chat-box" aria-live="polite">
+        <!-- messages inserted here -->
+      </section>
 
-    <script src="script.js"></script>
+      <form id="composer" class="composer" autocomplete="off" aria-label="Message composer">
+        <input id="userInput" class="input" type="text" placeholder="Speak to Skydaddy..." />
+        <button id="sendBtn" class="send" type="submit" aria-label="Send message">➤</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <small>Offline demo • Deployable on GitHub Pages</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
